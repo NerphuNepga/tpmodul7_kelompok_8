@@ -2,3 +2,4 @@
 using tpmodul7_kelompok_8;
 
 DataMahasiswa103022300050.ReadJSON();
+KuliahMahasiswa103022300050.ReadJSON();
