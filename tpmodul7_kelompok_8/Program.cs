@@ -1,2 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("tes");
+using tpmodul7_kelompok_8;
+
+DataMahasiswa103022300050.ReadJSON();
+KuliahMahasiswa103022300050.ReadJSON();
