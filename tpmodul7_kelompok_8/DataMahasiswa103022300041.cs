@@ -9,7 +9,7 @@ using System.Text.Json.Serialization;
 
 namespace tpmodul7_kelompok_8
 {
-    internal class DataMahasiswa103022300148
+    internal class DataMahasiswa103022300041
     {
         public class Nama
         {
@@ -24,12 +24,12 @@ namespace tpmodul7_kelompok_8
 
         public static void ReadJSON()
         {
-            String jsonString = File.ReadAllText("D:\\Kuliah\\KPL\\tp7_1_103022300148.json");
+            String jsonString = File.ReadAllText("D:\\Dokumen Kuliah\\Semester 4\\Konstruksi Perangkat Lunak Praktikum\\TP MODUL 7\\tpmodul7_kelompok_8\\tp7_1_103022300041.json");
             var options = new JsonSerializerOptions
             {
                 IncludeFields = true
             };
-            DataMahasiswa103022300148 dataMhs = JsonSerializer.Deserialize<DataMahasiswa103022300148>(jsonString, options);
+            DataMahasiswa103022300041 dataMhs = JsonSerializer.Deserialize<DataMahasiswa103022300041>(jsonString, options);
 
             Console.WriteLine("Nama " + dataMhs.nama.depan + " " + dataMhs.nama.belakang + " dengan nim " + dataMhs.nim + " dari fakultas " + dataMhs.fakultas);
         }
